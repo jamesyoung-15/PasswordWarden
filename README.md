@@ -19,11 +19,16 @@ Unpublished chrome extension project currently in progress. Password Warden will
 The extension offers a customizable password generator, where users can select whether they want numbers, letters, special characters, or even specific words in their randomly generated passwords. Also has random number generators that can be used for random pin generation.
 
 Progress so far:
-![alt-text](images/Password Generator Demo.gif)
+
+![alt-text](https://github.com/jamesyoung-15/PasswordWarden/blob/master/images/Password%20Generator%20Demo.gif)
 
 ### Password Strength Detector
 
 Based on user's password input, the extension will give the user feedback on their password strength. The strength of one's password is determined by the length, use of special characters (ie. @,!, etc), and many other factors. 
+
+Progress so far:
+
+![text](https://github.com/jamesyoung-15/PasswordWarden/blob/master/images/Password%20Strength%20Demo.gif)
 
 ### Password Manager
 
