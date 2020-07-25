@@ -7,7 +7,7 @@
 </sub>
 Password Warden
 </h1>
-*** 
+
 ## About
 
 Unpublished chrome extension project currently in progress. Password Warden will offer a password generator, password strength detector, and a password manager. Currently in progress.
@@ -17,6 +17,9 @@ Unpublished chrome extension project currently in progress. Password Warden will
 ### Password Generator
 
 The extension offers a customizable password generator, where users can select whether they want numbers, letters, special characters, or even specific words in their randomly generated passwords. Also has random number generators that can be used for random pin generation.
+
+Progress so far:
+![alt-text](images/Password Generator Demo.gif)
 
 ### Password Strength Detector
 

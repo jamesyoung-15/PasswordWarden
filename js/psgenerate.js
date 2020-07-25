@@ -18,15 +18,9 @@ document.getElementById("newPassword").addEventListener("click", newPassword);
 
 
 var passwords = [
-    'LonzoBallSUCKS@123',
-    'BenSimmonsCANNOTSHOOT3\'s',
     'iumbeaft48',
-    '@15NikolaJokic=goat',
-    'tiInspire=GOAT',
-    '12Steven@dams=aquaman',
     'thisP@ssword=safe123',
-    '@123*578*312',
-    'IFearNoMan,ButThatThingScaresMe-Heavy1',
+    'Ab@123*578*312Yz',
 ]
 
 var alphabets = [
