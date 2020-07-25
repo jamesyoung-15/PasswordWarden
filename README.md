@@ -8,7 +8,6 @@
 Password Warden
 </h1>
 *** 
-
 ## About
 
 Unpublished chrome extension project currently in progress. Password Warden will offer a password generator, password strength detector, and a password manager. Currently in progress.
