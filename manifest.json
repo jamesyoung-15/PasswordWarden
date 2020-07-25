@@ -1,0 +1,25 @@
+{
+    "name": "PasswordWarden",
+    "version": "0.1",
+    "description": "Do you want to check the security of your password? With this app, you can see if your password is a strong one or not.", 
+    "content_security_policy": "script-src 'self'; object-src 'self'",
+      "browser_action": {
+        "default_title":"Click to use",
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "images/PasswordWardenIcon128.png"
+        }
+        
+        
+      },
+      "icons": {
+        "16": "images/PasswordWardenIcon16.png",
+        "32": "images/PasswordWardenIcon32.png",
+        "48": "images/PasswordWardenIcon48.png",
+        "128": "images/PasswordWardenIcon128.png"
+      },
+      
+      "manifest_version": 2
+
+  }
+    
