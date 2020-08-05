@@ -1,4 +1,5 @@
-*** 
+---
+
 <h1 align="center">
 <sub>
 <img  src= "images/PasswordWardenIcon128.png"      
@@ -10,7 +11,7 @@ Password Warden
 
 ## About
 
-Unpublished chrome extension project currently in progress. Password Warden will offer a password generator, password strength detector, and a password manager. Currently in progress.
+Unpublished chrome extension project currently in progress. Password Warden will offer a password generator and password strength checker. Currently in progress.
 
 ## Features
 
@@ -24,16 +25,8 @@ Progress so far:
 
 ### Password Strength Detector
 
-Based on user's password input, the extension will give the user feedback on their password strength. The strength of one's password is determined by the length, use of special characters (ie. @,!, etc), and many other factors. 
+Based on user's password input, the extension will give the user feedback on their password strength. The strength of one's password is determined by the length, use of special characters (ie. @,!, etc), and many other factors.
 
 Progress so far:
 
 ![text](https://github.com/jamesyoung-15/PasswordWarden/blob/master/images/Password%20Strength%20Demo.gif)
-
-### Password Manager
-
-Users can enter passwords they wish the extension to keep, and can access them anytime they want. The passwords will be encrypted and kept safe, secure, and private.
-
-## Security
-
-Password Warden has no access to the user's passwords, and will keep the user's information safe and secure. 

@@ -1,0 +1,101 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  min-width: 200px;
+  min-height: 200px;
+  background-color: #edf1fd;
+}
+
+/* Popup Menu START */
+
+.popup-menu {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-menu h1 {
+  text-align: center;
+  font-size: 16px;
+  color: #161616;
+}
+.popup-menu p {
+  text-align: center;
+  font-size: 13px;
+  color: #161616;
+}
+
+.popup-buttons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.popup-menu a {
+  padding: 10px 0px;
+}
+.popup-menu button {
+  border-radius: 5px;
+  background-color: #161616;
+  color: #edf1fd;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+.popup-menu button:hover {
+  background-color: rgb(5, 29, 107);
+  cursor: pointer;
+}
+
+/* Popup Menu END */
+
+/* Password Generate START */
+
+.generate-heading {
+  text-align: center;
+}
+.generate-heading h1 {
+  font-size: 18px;
+}
+
+#passwordDisplay {
+  width: 80%;
+}
+
+#randomPassword {
+  margin-top: 5px;
+}
+
+#pinDisplay {
+  width: 30%;
+}
+
+#newPinCodes4 {
+  margin-top: 5px;
+}
+
+/* Password Generate END */
+
+/* Password Strength START */
+
+.strength-heading {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.strength-heading h2 {
+  font-size: 17px;
+}
+
+/* Password Strength END */
+
+/* Password Manager START */
+
+/* Password Manager END */
+
+/* Reddish: #501F3A
+Pinkish: #CB2D6F
+Whitish: #CCCCCC
+aquaish: #14A098
+dark green: #0F292F 
+
+blackish: #161616
+white: #edf1fd
+
+*/
