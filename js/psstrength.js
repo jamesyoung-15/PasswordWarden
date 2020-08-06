@@ -27,7 +27,7 @@ function strength() {
 
     if (counter == 0) {
       status.innerHTML = "NA";
-      status.style.background = "#fa6775";
+      status.style.background = "#FF0000";
       status.style.color = "#ffffff";
     }
 
@@ -53,8 +53,8 @@ function strength() {
       status.style.color = "#ffffff";
     }
   } else {
-    status.innerHTML = "";
-    status.style.background = "#edf1fd";
-    status.style.color = "#ffffff";
+    status.innerHTML = "No Input";
+    status.style.background = "#FF0000";
+    status.style.color = "black";
   }
 }

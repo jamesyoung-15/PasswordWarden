@@ -4,6 +4,25 @@ body {
   min-height: 200px;
   background-color: #edf1fd;
 }
+button {
+  margin-top: 5px;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+}
+button:hover {
+  background-color: aqua;
+  color: black;
+  cursor: pointer;
+}
+.return-section {
+  position: relative;
+  left: 74%;
+}
+.return-section button {
+  margin-top: 5px;
+  margin-left: 2px;
+}
 
 /* Popup Menu START */
 
@@ -33,20 +52,16 @@ body {
   padding: 10px 0px;
 }
 .popup-menu button {
-  border-radius: 5px;
-  background-color: #161616;
-  color: #edf1fd;
   font-size: 13px;
   padding: 5px 10px;
-}
-.popup-menu button:hover {
-  background-color: rgb(5, 29, 107);
-  cursor: pointer;
 }
 
 /* Popup Menu END */
 
 /* Password Generate START */
+.generator {
+  min-width: 350px;
+}
 
 .generate-heading {
   text-align: center;
@@ -54,21 +69,36 @@ body {
 .generate-heading h1 {
   font-size: 18px;
 }
+.generator h2{
+  font-size: 16px;
+  font-weight: 600;
+}
 
 #passwordDisplay {
   width: 80%;
 }
 
-#randomPassword {
+#numDisplay {
+  width: 60%;
+}
+
+#randomNumber {
   margin-top: 5px;
 }
 
-#pinDisplay {
-  width: 30%;
+.generator .return-section {
+  left: 83%;
 }
-
-#newPinCodes4 {
+#password-char {
+  margin-top: 4px;
+}
+#password-error-message {
+  border: 2px solid black;
   margin-top: 5px;
+  margin-left: 10px
+  width: 50%;
+  font-size: 14px;
+  text-align: center;
 }
 
 /* Password Generate END */
@@ -81,6 +111,11 @@ body {
 }
 .strength-heading h2 {
   font-size: 17px;
+}
+#length {
+  border: 2px solid black;
+  text-align: center;
+  background-color: #ff0000;
 }
 
 /* Password Strength END */
