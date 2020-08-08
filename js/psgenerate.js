@@ -1,25 +1,15 @@
 document.getElementById("randomPassword").addEventListener("click", generate);
 document.getElementById("password-error-message").style.display = "none";
 
-var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var lowercase = "abcdefghijklmnopqrstuvwxyz";
-var number = "0123456789";
 var symbols = "\"'(),-./:';<=>^[\\]^_`{|}~";
-var commonSymbols = "!#$%&+?@";
-var all = uppercase + lowercase + number + symbols + commonSymbols;
-// var noUpper = all - uppercase;
-// var noLower = all - lowercase;
-// var noSymbols = all - symbols;
-// var noCommon = all - commonSymbols;
-// var noNumber = all - number;
 
 function generate() {
   //variables
   var password = "";
   var passwordLength = document.getElementById("password-length").value;
-  var numberCheckbox = document.getElementById("password-number").checked;
-  var commonSpecialCheckbox = document.getElementById("password-commonspecial")
-    .checked;
+  // var numberCheckbox = document.getElementById("password-number").checked;
+  // var commonSpecialCheckbox = document.getElementById("password-commonspecial")
+  //   .checked;
   var specialCharCheckbox = document.getElementById("password-specialchar")
     .checked;
   var uppercaseCheckbox = document.getElementById("password-uppercase").checked;
@@ -45,13 +35,37 @@ function generate() {
     passwordCharacters = passwordCharacters + specificChar;
   }
 
-  if (specialCharCheckbox == true) {
-    passwordCharacters += symbols;
-  }
-  if (passwordLength <= 50 && passwordLength > 1) {
-    for (var index = 0; index < passwordLength; index++) {
-      var character = Math.floor(Math.random() * passwordCharacters.length);
-      password += passwordCharacters.substring(character, character + 1);
+  if (passwordLength <= 50 && passwordLength >= 1) {
+    if (words == "") {
+      for (var index = 0; index < passwordLength; index++) {
+        var character = Math.floor(Math.random() * passwordCharacters.length);
+        password += passwordCharacters.substring(character, character + 1);
+      }
+    } else if (
+      words != "" &&
+      words.length < passwordLength &&
+      passwordCharacters != ""
+    ) {
+      var newLength = passwordLength - words.length;
+      for (var index = 0; index < newLength; index++) {
+        var character = Math.floor(Math.random() * passwordCharacters.length);
+        password += passwordCharacters.substring(character, character + 1);
+      }
+      var index = Math.floor(Math.random() * passwordCharacters.length);
+      var password =
+        password.substring(0, index) + words + password.substring(index);
+    } else if (words.length == passwordLength) {
+      password += words;
+    } else if (
+      passwordCharacters == "" &&
+      words != "" &&
+      words.length < passwordLength
+    ) {
+      newLength = passwordLength - words.length;
+      for (var index = 0; index < newLength; index++) {
+        password += words;
+      }
+      password = password.substring(0, passwordLength);
     }
   }
 
@@ -67,7 +81,12 @@ function generate() {
   } else if (passwordLength < 1 || passwordLength > 50) {
     document.getElementById("password-error-message").style.display = "block";
     errorMessage.innerHTML =
-      "Invalid Password Length. Please choose a length between 1-50.";
+      "Error: </br> Invalid Password Length. Please choose a length between 1-50.";
+    errorMessage.style.background = "#FF0000";
+  } else if (words.length > passwordLength) {
+    document.getElementById("password-error-message").style.display = "block";
+    errorMessage.innerHTML =
+      "Error: </br> Word input should not be greater than inputted password length.";
     errorMessage.style.background = "#FF0000";
   } else {
     document.getElementById("password-error-message").style.display = "none";
@@ -89,15 +108,26 @@ function generate() {
   // console.log(lower);
 }
 
-function randomNumber() {
-  var randNum = "";
-  var numLength = document.getElementById("number-length").value;
-  for (var i = 0; i < numLength; i++) {
-    var singleNumber = Math.floor(Math.random() * number.length);
-    randNum += number.substring(singleNumber, singleNumber + 1);
-  }
-  document.getElementById("numDisplay").value = randNum;
-}
+// var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// var lowercase = "abcdefghijklmnopqrstuvwxyz";
+// var number = "0123456789";
+// var commonSymbols = "!#$%&+?@";
+// var all = uppercase + lowercase + number + symbols + commonSymbols;
+// var noUpper = all - uppercase;
+// var noLower = all - lowercase;
+// var noSymbols = all - symbols;
+// var noCommon = all - commonSymbols;
+// var noNumber = all - number;
+
+// function randomNumber() {
+//   var randNum = "";
+//   var numLength = document.getElementById("number-length").value;
+//   for (var i = 0; i < numLength; i++) {
+//     var singleNumber = Math.floor(Math.random() * number.length);
+//     randNum += number.substring(singleNumber, singleNumber + 1);
+//   }
+//   document.getElementById("numDisplay").value = randNum;
+// }
 
 /*
 Old Code

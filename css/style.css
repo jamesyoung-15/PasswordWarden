@@ -3,12 +3,14 @@ body {
   min-width: 200px;
   min-height: 200px;
   background-color: #edf1fd;
+  max-width: 500px;
+  max-height: 500px;
 }
 button {
   margin-top: 5px;
-  background-color: black;
+  background-color: whitesmoke;
   border-radius: 5px;
-  color: white;
+  color: black;
 }
 button:hover {
   background-color: aqua;
@@ -17,29 +19,35 @@ button:hover {
 }
 .return-section {
   position: relative;
-  left: 74%;
+  left: 72%;
 }
 .return-section button {
   margin-top: 5px;
-  margin-left: 2px;
+  margin-right: 3px;
 }
 
 /* Popup Menu START */
 
 .popup-menu {
+  align-items: center;
   width: 100%;
-  height: 100%;
+}
+.popup-menu img {
+  margin: 0;
 }
 
 .popup-menu h1 {
   text-align: center;
   font-size: 16px;
   color: #161616;
+  margin-bottom: 2px;
 }
 .popup-menu p {
   text-align: center;
   font-size: 13px;
   color: #161616;
+  margin-bottom: 5px;
+  margin-top: 2px;
 }
 
 .popup-buttons {
@@ -55,6 +63,11 @@ button:hover {
   font-size: 13px;
   padding: 5px 10px;
 }
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
 
 /* Popup Menu END */
 
@@ -69,7 +82,7 @@ button:hover {
 .generate-heading h1 {
   font-size: 18px;
 }
-.generator h2{
+.generator h2 {
   font-size: 16px;
   font-weight: 600;
 }
@@ -89,16 +102,31 @@ button:hover {
 .generator .return-section {
   left: 83%;
 }
+.more-info {
+  position: relative;
+  top: 26px;
+}
+.more-info button {
+  position: absolute;
+  top: 10px;
+}
+.info-container {
+  min-width: 460px;
+  font-size: larger;
+}
 #password-char {
   margin-top: 4px;
 }
 #password-error-message {
   border: 2px solid black;
   margin-top: 5px;
-  margin-left: 10px
+  margin-left: 10px;
   width: 50%;
   font-size: 14px;
   text-align: center;
+}
+.info-container .return-section {
+  left: 89%;
 }
 
 /* Password Generate END */
